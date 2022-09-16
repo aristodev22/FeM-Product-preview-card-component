@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeM Product preview card component</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main class="container">
+        <div class="card">
+            <div class="product-image">
+                <picture>
+                    <source 
+                      srcset="./images/image-product-desktop.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img 
+                      src="./images/image-product-mobile.jpg" 
+                      alt="Product Image"
+                    />
+                  </picture>
+            </div>
+           <div class="card-content">
+                <p class="meta">
+                    Perfume
+                </p>
+                <p class="product-name">
+                    Gabrielle Essence Eau De Parfum
+                </p>
+                <p class="product-description">
+                    A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                    Perfumer-Creator for the House of CHANEL.
+                </p>
+                <div class="price">
+                    <p class="discount-price">
+                        $149.99
+                    </p>
+                    <p class="real-price">
+                        $169.99
+                    </p>
+                </div>
+                <button class="add-to-cart">
+                  <Span><img src="./images/icon-cart.svg" alt=""></Span>  Add to Cart
+                </button>
+            </div>            
+        </div>
+    </main>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.
+        Coded by <a href="https://aristodev.com">Aristo Dev</a>.
+    </footer>
+</body>
+
+</html>
